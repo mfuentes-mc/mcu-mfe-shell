@@ -2,8 +2,9 @@ import React, {Suspense, lazy} from 'react'
 import { Routes, Route} from 'react-router-dom'
 import HomeScreen from '../pages/home/components/HomeScreen'
 import {Navbar} from '../components/navbar/Navbar'
-import {StoresRouters} from 'stores/StoresRouters';
 import SafeComponent from '../components/error/SafeComponent';
+
+const StoresRouters = lazy(()=> import('stores/Stores/StoresRouters'));
 
 const UserRouters = lazy(() => import('users/UsersRouters'));
 
@@ -23,7 +24,13 @@ export const DashboardRoutes = () => {
                   </Suspense>
                 </SafeComponent>
               }/>
-              <Route path="stores/*" element={<StoresRouters/>}/>
+              <Route path="stores/*" element={
+                <SafeComponent>
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <StoresRouters/>
+                  </Suspense>
+                </SafeComponent>
+              }/>
           </Routes>
         </div>
     </>
