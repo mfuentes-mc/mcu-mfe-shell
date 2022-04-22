@@ -4,7 +4,7 @@ import HomeScreen from '../pages/home/components/HomeScreen'
 import {Navbar} from '../components/navbar/Navbar'
 import SafeComponent from '../components/error/SafeComponent';
 
-const StoresRouters = lazy(()=> import('stores/Stores/StoresRouters'));
+const StoresRouters = lazy(()=> import('stores/StoresRouters'));
 
 const UserRouters = lazy(() => import('users/UsersRouters'));
 
