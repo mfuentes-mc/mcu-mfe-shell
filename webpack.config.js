@@ -52,8 +52,8 @@
         name: "shell",
         filename: "remoteEntry.js",
         remotes: {
-            users: 'users@http://users-mcuniversity.s3-website-us-east-1.amazonaws.com/remoteEntry.js',
-            stores: 'stores@http://stores-mcuniversity.s3-website-us-east-1.amazonaws.com/remoteEntry.js',
+            users: 'users@http://localhost:4201/remoteEntry.js',
+            stores: 'stores@http://localhost:4202/remoteEntry.js',
         },
         shared: {
             ...deps,
