@@ -29,8 +29,7 @@ export const DashboardRoutes = () => {
                   <Suspense fallback={<div>Loading...</div>}>
                     <StoresRouters/>
                   </Suspense>
-                </SafeComponent>
-              }/>
+                </SafeComponent>}/>
           </Routes>
         </div>
     </>
