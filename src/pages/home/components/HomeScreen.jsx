@@ -23,11 +23,6 @@ const HomeScreen = () => {
                   <UserInfo/>
                 </Suspense>
               </SafeComponent>
-              <SafeComponent>
-                <Suspense fallback={<div>Loading...</div>}>
-                  <UserInfo/>
-                </Suspense>
-              </SafeComponent>
             </div>
             <footer className="pt-3 mt-4 text-muted border-top">
               &copy; 2022
