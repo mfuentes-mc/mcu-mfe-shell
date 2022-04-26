@@ -6,7 +6,7 @@
     module.exports = {
     mode: "production",
     output: {
-        publicPath: "http://shell-mcuniversity.s3-website-us-east-1.amazonaws.com/",
+        publicPath: "http://d7t6tev0iae6b.cloudfront.net/",
     },
 
     resolve: {
@@ -52,8 +52,8 @@
         name: "shell",
         filename: "remoteEntry.js",
         remotes: {
-            users: 'users@http://users-mcuniversity.s3-website-us-east-1.amazonaws.com/remoteEntry.js',
-            stores: 'stores@http://stores-mcuniversity.s3-website-us-east-1.amazonaws.com/remoteEntry.js',
+            users: 'users@http://d1e4fzm2041a2b.cloudfront.net/remoteEntry.js',
+            stores: 'stores@http://d3royr732d7ozp.cloudfront.net/remoteEntry.js',
         },
         shared: {
             ...deps,
