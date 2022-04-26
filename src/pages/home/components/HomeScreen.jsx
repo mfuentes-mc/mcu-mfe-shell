@@ -12,6 +12,7 @@ const HomeScreen = () => {
                 <p className="col-md-8 fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem atque officia sint magni eum ducimus labore dolore iure aliquam. Esse ducimus quos explicabo blanditiis voluptatem unde ea doloremque harum optio.</p>
               </div>
             </div>
+            
             <div className="row align-items-md-stretch">
               <SafeComponent>
                 <Suspense fallback={<div>Loading...</div>}>
