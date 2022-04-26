@@ -7,6 +7,8 @@
     mode: "production",
     output: {
         publicPath: "http://d7t6tev0iae6b.cloudfront.net/",
+        chunkFilename: "[name].[contenthash].js",
+        filename: "[name].[contenthash].js",
     },
 
     resolve: {
